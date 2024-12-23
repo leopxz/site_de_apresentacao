@@ -164,57 +164,6 @@ h6 {
   }
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -233,9 +182,10 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 100px;
+  margin-right: 5px;
 }
+
 
 .header .logo h1 {
   font-size: 30px;
@@ -1167,7 +1117,7 @@ section,
 }
 
 .services .service-item.item-pink i {
-  color: #f3268c;
+  color: #26f337;
 }
 
 .services .service-item.item-pink:hover .icon i {
@@ -1606,9 +1556,9 @@ section,
   left: -15px; /* Ajusta a posição esquerda para centralizar */
   right: -15px; /* Ajusta a posição direita para centralizar */
   bottom: -15px; /* Ajusta a posição inferior para centralizar */
-  border-radius: 50%; /* Faz o contorno ser circular */
+  border-radius: 55%; /* Faz o contorno ser circular */
   border: 0px solid transparent; /* Borda inicial transparente */
-  background: conic-gradient(#000000, #ff00cc, #00ccff, #000000); /* Gradiente colorido */
+  background: conic-gradient(#005eff, #ff00cc, #000000, #005eff); /* Gradiente colorido */
   box-shadow: 0 0 20px rgba(0, 255, 153, 0.5), 0 0 40px rgba(0, 204, 255, 0.5); /* Efeito de brilho */
   animation: spin 3s linear infinite; /* Animação de rotação */
   z-index: 1; /* Para garantir que fique atrás da imagem */
@@ -1625,8 +1575,8 @@ section,
 
 .btn-main {
   display: inline-block;
-  margin-top: 50px;
-  padding: 25px 35px;
+  margin-top: 8px;
+  padding: 20px 20px;
   background-color: #000000;
   color: #ffffff;
   text-decoration: none;
@@ -1647,16 +1597,16 @@ section,
   border-radius: 5px;
   border: 2px solid #00ff99; /* Cor do contorno */
   opacity: 0; /* Inicialmente invisível */
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.5s ease;
   transform: scale(1.1); /* Levemente maior */
 }
 
 .btn-main:hover {
-  background-color: #272726;
+  background-color: #27272600;
 }
 
 .btn-main:hover::before {
-  opacity: 1; /* Torna visível ao passar o mouse */
+  opacity: 10; /* Torna visível ao passar o mouse */
   transform: scale(1); /* Reduz o tamanho para coincidir com o botão */
 }
 
@@ -1745,3 +1695,11 @@ section,
 .certificate-img:hover {
   transform: scale(1.05);
 }
+
+.btn-drive {
+  display: flex;
+  justify-content: display;
+  margin-top: 10px;
+  margin-left: 20px; 
+}
+
