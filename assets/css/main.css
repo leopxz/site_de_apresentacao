@@ -791,7 +791,7 @@ section,
   position: relative;
   z-index: 3;
 }
-/* ------------------------------------------*/
+/* ------------------------------------------*
 @media (max-width: 768px) {
   .hero {
     min-height: 70vh;
